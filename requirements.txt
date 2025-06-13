@@ -1,0 +1,8 @@
+pandas
+numpy
+nltk
+spacy
+torch
+torch-vision
+optuna
+scikit-learn

@@ -6,3 +6,5 @@ torch
 torch-vision
 optuna
 scikit-learn
+plotly
+kaleido

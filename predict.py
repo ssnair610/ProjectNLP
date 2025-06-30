@@ -1,9 +1,3 @@
-import os
-from utils.plotter import plot_model_data
-
-FILE_PATH = os.path.join("data", "track-a-test-large.csv")
-save_image = True
-
 from utils.evaluate import evaluate_nb, evaluate_nn, evaluate_rfc, evaluate_svm
 from utils.predictors import predictFNN, predictGRU, predictLSTM
 
@@ -38,15 +32,3 @@ def predict(testfile):
     ]
 
     return best_pred, overall_accuracies[max_index], model_names[max_index]
-
-
-def main():
-    best_pred, best_accuracy, best_model = predict(FILE_PATH)
-    print(f"Model: {best_model} with accuracy: {best_accuracy}")
-
-    if save_image:
-        plot_model_data(FILE_PATH, save_image)
-
-
-if __name__ == "__main__":
-    main()

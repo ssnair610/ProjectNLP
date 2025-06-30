@@ -685,10 +685,6 @@ def evaluate_nb(csvPath: str, log_level: str, print_flag = False):
 
 warnings.filterwarnings("ignore", category = InconsistentVersionWarning)
 
-
-testfile = os.path.join("Data", "track-a-test-large.csv")
-
-
 def label_plotter(fnn_acc, gru_acc, lstm_acc, rfc_acc, svm_acc, nb_acc, save_flag = False):
     model_names = ["Neural Network: Feed Forward","Neural Network: LSTM","Neural Network: GRU", "Random Forest Classifier", "Support Vector Machine", "Naive Bayes Classifier"]
     label_names = ["anger","fear","joy","sadness","surprise"]

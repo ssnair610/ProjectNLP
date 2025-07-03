@@ -19,7 +19,7 @@
 | Andreas A. D. Liess                  | 1         |
 | Basavadeepthi Horeyala Mahadevaswamy | 2         |
 | Pratiksha Jagat                      | 3         |
-| Shreyas Sarathchandramohan           | 4         |
+| Shreyas Sarathchandramohan           | 3848254   |
 | Tushar Shandilya                     | 5         |
 
 ## Getting Started
@@ -48,7 +48,8 @@ pip install -r requirements. txt
 
 ### Output of the `predict` function
 
-- will you get it in cli? in a file?
+- List of lists, with each sub-list having 5 elements corresponding to each label
+- best model and it's corresponding overall-accuracy of testing/validation set
 
 ### Comparison of Approaches
 

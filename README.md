@@ -42,7 +42,7 @@ pip install -r requirements. txt
 
 ### Running the `predict` function
 
-- ? Where will the input (file path) go? (cli? change a variable within main.py?)
+- Assign the path of the test file to the variable FILE_PATH enclosed within the comments.
 
 ## About
 

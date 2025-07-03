@@ -1,8 +1,18 @@
 import os
 from utils.plotter import plot_model_data
 
+# Insert File-path of test file below
+
+# ------------------------------------------------------------------------ #
+
 FILE_PATH = os.path.join("data", "track-a-test-large.csv")
+
+# ------------------------------------------------------------------------ #
+
+# Save graph as image : Boolean
+# ------------------------------------------------------------------------ #
 save_image = True
+# ------------------------------------------------------------------------ #
 
 from utils.evaluate import evaluate_nb, evaluate_nn, evaluate_rfc, evaluate_svm
 from utils.predictors import predictFNN, predictGRU, predictLSTM

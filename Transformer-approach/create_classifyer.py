@@ -47,17 +47,12 @@ class EmotionDataset(Dataset):
 
 
 def main(embeddings, labels, input_dim=768, hidden_dim=256, output_dim=5):
-
-
-
     dataset = EmotionDataset(embeddings = embeddings, labels=labels)  # X = list of vectors, y = list of [0,1,0,0,1]
     loader = DataLoader(dataset, batch_size=32, shuffle=True)
 
     model = EmotionClassifier(input_dim=input_dim, hidden_dim=hidden_dim, output_dim=output_dim)
     loss_fn = nn.BCEWithLogitsLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
-
-
 
     model.train()
     for epoch in range(5):  # number of passes over data

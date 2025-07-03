@@ -8,15 +8,10 @@ def get_global_data():
 
     return sentence_path, bert_encoder, classification_model_path
 
-
-
-
-
 def main_model_creation():
     from data_pipeline import Structure_data_Pipeline
     from create_classifyer import main as create_classifier_main
     import os
-
 
     sentence_path, bert_encoder, classification_model_path = get_global_data()
 

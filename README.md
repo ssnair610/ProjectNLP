@@ -14,13 +14,13 @@
 
 ## Team
 
-| Name                                 | Matr. No. |
-| ------------------------------------ | --------- |
-| Andreas A. D. Liess                  | 1         |
-| Basavadeepthi Horeyala Mahadevaswamy | 2         |
-| Pratiksha Jagat                      | 3         |
-| Shreyas Sarathchandramohan           | 3848254   |
-| Tushar Shandilya                     | 5         |
+| Name                                 |
+| ------------------------------------ |
+| Andreas A. D. Liess                  |
+| Basavadeepthi Horeyala Mahadevaswamy |
+| Pratiksha Jagat                      |
+| Shreyas Sarathchandramohan           |
+| Tushar Shandilya                     |
 
 ## Getting Started
 
@@ -44,19 +44,27 @@ pip install -r requirements. txt
 
 - ? Where will the input (file path) go? (cli? change a variable within main.py?)
 
-## Results
+## About
+
+### Approaches used
+
+- Neural Networks
+  - Feed Forward NN
+  - Recurring NN
+- Random Forest
+- Support Vector Machines
+- Naive Bayes
+- Transformers
 
 ### Output of the `predict` function
 
-- List of lists, with each sub-list having 5 elements corresponding to each label
-- best model and it's corresponding overall-accuracy of testing/validation set
-
-### Comparison of Approaches
-
-- Available Approaches
-- Link to files
-- screenshots
-- Path of files with accuracy comparison
-- Path of files with graphs
+- A table, with each record having 5 predicted emotions corresponding to given text
+- Name of best model and it's corresponding overall-accuracy of testing/validation set
 
 ## Directory Structure
+
+- \-+`approaches-nb` (Jupyter notebooks for models)
+- \-+ `approaches` (Jupyter notebooks exported to python scripts)
+- \-+ `utils` (utilities and helper functions for codes)
+- \-+`saved-model` (saved-models for given approaches)
+- \- main.py

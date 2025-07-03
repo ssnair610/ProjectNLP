@@ -65,6 +65,7 @@ pip install -r requirements. txt
 
 - \-+`approaches-nb` (Jupyter notebooks for models)
 - \-+ `approaches` (Jupyter notebooks exported to python scripts)
-- \-+ `utils` (utilities and helper functions for codes)
+- -+ `data` (CSV files used for training and testing)
+- -+ `utils` (utilities and helper functions for codes)
 - \-+`saved-model` (saved-models for given approaches)
 - \- main.py

@@ -6,11 +6,14 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics import multilabel_confusion_matrix
 from sklearn.model_selection import train_test_split
+from sklearn.exceptions import InconsistentVersionWarning
+import warnings
 
 from utils.cleaner import clean_text_svm
 from utils.constants import LABEL_COLUMNS
 from utils.MetricCalc import MetricCalc
 
+warnings.filterwarnings("ignore", category = InconsistentVersionWarning)
 
 def evaluate_nn(csvPath: str, pred, predname, print_flag=False):
     df = pd.read_csv(csvPath)
